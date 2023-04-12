@@ -4,38 +4,54 @@ body {
     font-size: 28px;
 }
 
-/* advice-id {
-    background-color:hsl(217, 19%, 24%);
-    color: white;
-    margin-left: 50px; margin-right: 50px;
-    padding: 70px;
-    border-radius: 8px;
-    text-align: center;
-} */
+.grid-box {
+    display: grid;
+}
 
-#container {
+.grid-box > div {
+    background-color: #f1f1f1;
+    padding: 20px;
+    font-size: 30px;
+  }
+  
+#box {
     background-color:hsl(217, 19%, 24%);
     color: white;
-    margin-left: 50px; margin-right: 50px;
-    padding: 70px;
+    margin-left: 300px; margin-right: 300px;
+    padding: 55px;
     border-radius: 8px;
     text-align: center;
+    box-shadow:5px 5px 20px rgba(0,0,0,0.2);
+    }
+    
+#advice-id {
+    background-color: rgb(105, 239, 239);
+    color: white;
+}
+
+#advice-word {
+    background-color:hsl(217, 19%, 24%);
+    color: white;
 }
 
 .button-style {
     height: 42px;
     width: 42px;
-    border-radius: 30px;
-    margin-top: -20px;
+    margin-top: -23px;
     margin-left: auto; margin-right: auto;
 }
 
 .button-style button {
     background-color: hsl(150, 100%, 66%);
-    width: 42px;
-    height: 42px;
-    border-radius: 30px;
+    width: 45px;
+    height: 45px;
+    border-radius: 25px;
     border: none;
+}
+
+.dice {
+    max-width: 60%;
+    margin-top: 2px;
 }
 
 .button-style:hover {
@@ -48,7 +64,11 @@ body {
 }
 
 footer { 
-    font-size: 11px; text-align: center;
     color: hsl(228, 45%, 44%); 
-    padding: 20px;
+    color: white;
+    font-size: 12px; 
+    text-align: center;
+    position: fixed;
+    bottom: 10px;
+    width: 100%;
 }
