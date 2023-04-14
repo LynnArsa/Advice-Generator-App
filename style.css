@@ -1,3 +1,9 @@
+@media only screen and (min-width: 768px) {
+    .box {
+      width: 80%;
+      margin: 0 auto;
+    }}
+    
 body {
     background-color: hsl(218, 23%, 16%);
     font-family: 'Manrope', sans-serif;
@@ -10,43 +16,47 @@ body {
 
 .grid-box > div {
     background-color: #f1f1f1;
-    padding: 20px;
+    padding: 16px;
     font-size: 30px;
   }
   
 #box {
     background-color:hsl(217, 19%, 24%);
+    box-shadow:5px 5px 20px rgba(0,0,0,0.1);
     color: white;
-    margin-top: 250px;
-    margin-left: 640px; margin-right: 640px;
-    padding: 55px;
-    border-radius: 8px;
     text-align: center;
-    box-shadow:5px 5px 20px rgba(0,0,0,0.2);
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 50px;
+    border-radius: 12px;
     }
     
 #advice-id {
     background-color:hsl(217, 19%, 24%);
-    color: white;
+    color: rgb(82, 255, 168);
+    font-size: 14px;
 }
 
 #advice-word {
     background-color:hsl(217, 19%, 24%);
-    color: white;
+    color: white;    
 }
 
-.button-style {
-    height: 42px;
-    width: 42px;
-    margin-top: -23px;
-    margin-left: auto; margin-right: auto;
+#line {
+    background-color: hsl(217, 19%, 24%)
 }
 
-.button-style button {
-    background-color: hsl(150, 100%, 66%);
-    width: 45px;
-    height: 45px;
-    border-radius: 25px;
+#button-style {
+    display: flex;
+    justify-content: center;
+    margin-top: -34px;
+}
+
+#button-style button {
+    background-color: rgb(82, 255, 168);
+    width: 65px;
+    height: 65px;
+    border-radius: 45px;
     border: none;
 }
 
@@ -55,7 +65,7 @@ body {
     margin-top: 2px;
 }
 
-.button-style:hover {
+#button-style:hover {
     opacity: .8;
 }
 

@@ -3,7 +3,7 @@ function getAdvice() {
     .then((response) => response.json())
     .then((data) => {
       console.log(data)
-      document.getElementById("advice-id").innerHTML = data.slip.id;
+      document.getElementById("advice-id").innerHTML = "A D V I C E  # " + data.slip.id;
       document.getElementById("advice-word").innerHTML = data.slip.advice;
     })
     .catch
