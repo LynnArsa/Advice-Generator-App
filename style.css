@@ -17,7 +17,8 @@ body {
 #box {
     background-color:hsl(217, 19%, 24%);
     color: white;
-    margin-left: 300px; margin-right: 300px;
+    margin-top: 250px;
+    margin-left: 640px; margin-right: 640px;
     padding: 55px;
     border-radius: 8px;
     text-align: center;
@@ -25,7 +26,7 @@ body {
     }
     
 #advice-id {
-    background-color: rgb(105, 239, 239);
+    background-color:hsl(217, 19%, 24%);
     color: white;
 }
 

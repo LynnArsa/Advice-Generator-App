@@ -1,24 +1,12 @@
-
-fetch("https://api.adviceslip.com/advice")
-  .then(response => response.json())
-  .then(data => {
-    console.log(data)
-    const container = document.querySelector('#advice-id');
-    const element = document.createElement('div');
-    element.textContent = data.slip.id;
-    container.appendChild(element);
-
-    });
-    
-fetch("https://api.adviceslip.com/advice")
-  .then(response => response.json())
-  .then(data => {
-    console.log(data)
-    const container = document.querySelector('#advice-word');
-    const element = document.createElement('div');
-    element.textContent = data.slip.advice;
-    container.appendChild(element);
-
-  });
+function getAdvice() {
+  fetch("https://api.adviceslip.com/advice")
+    .then((response) => response.json())
+    .then((data) => {
+      console.log(data)
+      document.getElementById("advice-id").innerHTML = data.slip.id;
+      document.getElementById("advice-word").innerHTML = data.slip.advice;
+    })
+    .catch
+}
 
   
