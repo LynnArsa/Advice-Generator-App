@@ -5,34 +5,34 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  <link rel="stylesheet" href="style.css">
-  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@700&display=swap" rel="stylesheet">
 
   <title>Frontend Mentor | Advice Generator App</title>
+  <script src="https://cdn.tailwindcss.com"></script>
 
 </head>
-<body>
+<body class="bg-gray-800 text-white text-3xl" style="font-family: 'Manrope', sans-serif;">
 
-  <div id="box" class="grid-box">
-    <div id="advice-id" class="grid"></div> 
-    <div id="advice-word" class="grid"></div>
-    <div id="line">
+  <div class="bg-[#313a49] max-w-md mx-auto shadow-lg text-center p-14 mt-56 rounded-2xl">
+    <div id="advice-id" class="text-green-400 text-sm"></div> 
+    <div id="advice-word" class="p-3"></div>
+    <div id="line" class="p-4">
       <img src="https://raw.githubusercontent.com/LynnArsa/Advice-Generator-App/main/images/pattern-divider-desktop.svg" style="background-color: hsl(217, 19%, 24%)">
     </div>
   </div>
  
-  <div id="button-style">
-    <button onclick="getAdvice()">
-      <img src="https://raw.githubusercontent.com/LynnArsa/Advice-Generator-App/main/images/icon-dice.svg" class="dice">
+  <div id="button-style" class="flex justify-center -mt-8">
+    <button onclick="getAdvice()" class="bg-green-400 w-16 h-16 rounded-full hover:bg-[#53ffab]">
+      <img src="https://raw.githubusercontent.com/LynnArsa/Advice-Generator-App/main/images/icon-dice.svg" class="mx-auto">
     </button>
   </div>
 
   <script src="js.js"></script>
 
 
-  <footer>
+  <footer class="text-sm text-white fixed bottom-0 w-full text-center">
     Challenge by <a href="https://www.frontendmentor.io/?ref=challenge" target="_blank">Frontend Mentor</a>.
-    Coded by <a href="https://github.com/LynnArsa" target="_blank">Lynn</a>.
+    Coded by <a href="https://github.com/LynnArsa" target="_blank" class="text-green-400">Lynn</a>.
   </footer>
 </body>
 </html>
